@@ -26,6 +26,7 @@ body {
   width: 100%;
   height: 100vh;
   padding: 1rem;
+  font-family: "Nunito";
 }
 
 .current-feels-like {
@@ -54,7 +55,6 @@ body {
 }
 
 .weather-body-details {
-  border: 3px solid coral;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
@@ -62,7 +62,6 @@ body {
 }
 
 .main-heading > h1 {
-  font-family: "Nunito";
   font-size: 55px;
 }
 
@@ -106,4 +105,24 @@ button:hover {
 button:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.current-weather-span {
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+  padding-left: 0.3rem;
+}
+
+.current-temperature-span {
+  font-size: 4rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
+.current-feels-like-span {
+  font-size: 15rem;
+  font-weight: 900;
+  position: relative;
 }

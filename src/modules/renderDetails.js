@@ -10,13 +10,7 @@ export const renderDetails = (response) => {
   const getWindSpan = document.querySelector(".current-wind-span");
   const getHumiditySpan = document.querySelector(".current-humidity-span");
 
-  console.log(
-    "response.current.condition.text",
-    response.current.condition.text
-  );
   getLocationSpan.textContent = response.current.condition.text;
   getCurrentTempSpan.textContent = `${response.location.name}, ${response.location.country}`;
   getCurrentFeelsLikeSpan.textContent = response.current.temp_c;
-  getWindSpan.textContent = `${response.current.wind_kph} KPH`;
-  getHumiditySpan.textContent = `${response.current.humidity}%`;
 };
