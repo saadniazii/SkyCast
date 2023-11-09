@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -26,14 +28,8 @@ body {
   padding: 1rem;
 }
 
-.current-feels-like,
-.current-temperature {
+.current-feels-like {
   position: relative;
-}
-
-.current-temperature-span::after {
-  content: "\00B0 F";
-  position: absolute;
 }
 
 .current-feels-like-span::after {
@@ -63,4 +59,9 @@ body {
   flex-direction: column;
   margin-top: 50px;
   padding-left: 100px;
+}
+
+.main-heading > h1 {
+  font-family: "Nunito";
+  font-size: 55px;
 }
